@@ -64,9 +64,9 @@ class App extends Component {
     console.log(this.state);
    };               
 
-   symbolSearch = (data) => {
-     console.log("search")
-   };
+   
+
+   
   
   render(){
     
@@ -77,10 +77,9 @@ class App extends Component {
                <hr className="border m-0"/>
                <br/>
        
-      <Route path="/" exact render={(props)=><Home {...props} isLoggedIn={this.state.isLoggedIn} handleSearch={this.symbolSearch}/>}/>
+      <Route path="/" exact render={(props)=><Home {...props} isLoggedIn={this.state.isLoggedIn}/>}/>
       <Route path="/About" component={About} />
       <Route path="/signup" component={SignUp} />
-      <Route path="/client_page" render={(props)=><Client_Page {...props} isLoggedIn={this.state.isLoggedIn} searchItem={this.state.searchItem} />}/>
       </Container>
     
       
