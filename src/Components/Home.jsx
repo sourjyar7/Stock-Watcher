@@ -52,7 +52,7 @@ class Home extends Component {
   render() {
     let content;
     if(this.state.searchItem !== null){
-       content=<Client_Page isLoggedIn={this.props.isLoggedIn} searchedItem={this.state.searchItem} searchInvoked={this.state.searchInvoked}></Client_Page>
+       content=<Client_Page isLoggedIn={this.props.isLoggedIn} searchedItem={this.state.searchItem} searchInvoked={this.state.searchInvoked} handleSearch={this.symbolSearch}></Client_Page>
     }
     else{
       content=<React.Fragment> 

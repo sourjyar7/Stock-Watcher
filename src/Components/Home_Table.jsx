@@ -20,7 +20,7 @@ class Home_Table extends Component {
               return 0;
           });
         this.setState({top_losers : arr});
-        let temp=nifty50.slice(1,51);
+        
         
         nifty50.sort((a,b)=>{
           if(a.totalTradedVolume > b.totalTradedVolume)
